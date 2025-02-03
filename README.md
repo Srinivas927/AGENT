@@ -1,37 +1,37 @@
 # AGENT
-class Customer {
-    private String name;
-    private int age;
-    private String address;
-    private String phoneNumber;
+class Policy {
+    private String policyNumber;
+    private String policyType;
+    private double coverageAmount;
+    private Customer customer;
 
     // Constructor
-    public Customer(String name, int age, String address, String phoneNumber) {
-        this.name = name;
-        this.age = age;
-        this.address = address;
-        this.phoneNumber = phoneNumber;
+    public Policy(String policyNumber, String policyType, double coverageAmount, Customer customer) {
+        this.policyNumber = policyNumber;
+        this.policyType = policyType;
+        this.coverageAmount = coverageAmount;
+        this.customer = customer;
     }
 
     // Getters and Setters
-    public String getName() {
-        return name;
+    public String getPolicyNumber() {
+        return policyNumber;
     }
 
-    public int getAge() {
-        return age;
+    public String getPolicyType() {
+        return policyType;
     }
 
-    public String getAddress() {
-        return address;
+    public double getCoverageAmount() {
+        return coverageAmount;
     }
 
-    public String getPhoneNumber() {
-        return phoneNumber;
+    public Customer getCustomer() {
+        return customer;
     }
 
     @Override
     public String toString() {
-        return "Customer{name='" + name + "', age=" + age + ", address='" + address + "', phoneNumber='" + phoneNumber + "'}";
+        return "Policy{policyNumber='" + policyNumber + "', policyType='" + policyType + "', coverageAmount=" + coverageAmount + ", customer=" + customer.getName() + "}";
     }
 }
