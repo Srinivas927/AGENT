@@ -3,7 +3,7 @@ class Policy {
     private String policyNumber;
     private String policyType;
     private double coverageAmount;
-    private Customer customer;
+    private Customej customer;
 
     // Constructor
     public Policy(String policyNumber, String policyType, double coverageAmount, Customer customer) {
