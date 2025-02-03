@@ -1,5 +1,5 @@
 # AGENT
-import java.util.Scanner;
+import java.util.Scaner;
 
 
 
